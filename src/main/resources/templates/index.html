@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <title th:text="${titulo}"></title>
+<link rel ="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
 </head>
 <body>
 
-<h1 th:text="${titulo}"> según Agus </h1>
-
+<h1 th:text="${titulo}" class="color-rojo"></h1>
+<h2 class="color-azul">Decorando con css</h2>
 <table th:if="${usuarios.size() > 0}">
 		<thead>
 			<tr> 
@@ -24,5 +25,7 @@
 		</tr>
 	</tbody>
 </table>
+
+<img th:src="@{/images/programador.jpg}"></img>
 </body>
 </html>
